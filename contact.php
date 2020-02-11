@@ -1,0 +1,1 @@
+<?php output_contact_details(true,false); ?>

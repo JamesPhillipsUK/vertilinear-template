@@ -1,0 +1,6 @@
+#MacOS Files
+.DS_Store
+
+#VS Code files
+.vscode/*
+*.code-workspace

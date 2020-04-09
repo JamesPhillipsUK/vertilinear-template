@@ -1,5 +1,5 @@
 <!--
-  Vertilinear Template for BlogDraw.  Copyright © James Phillips 2020 - james@jamesphillipsuk.com.
+  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020 - james@jamesphillipsuk.com.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -23,25 +23,40 @@
     <link rel="stylesheet" href="<?php output_head_template_location(); ?>/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 offset-md-2 col-md-8">
-          <aside class="card">
-            <header class="card-header"><h3><?php output_author_profile("Caption"); ?></h3></header>
-            <div class="card-body"><?php output_author_profile("Image"); ?><?php output_author_profile("Blurb"); ?></div>
-          </aside>
+  <nav class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+          <a href="<?php output_home_link(); ?>" title="<?php echo TITLE; ?>" class="navbar-brand d-flex align-items-center">
+            <h1><?php output_site_title(false); ?></h1>
+          </a>
         </div>
-        <section class="col-12 offset-md-2 col-md-8">
+    </nav>
+    <div class="container-fluid py-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3 order-md-first text-center">
+          <aside>
+            <header>
+              <h2><?php output_author_profile("Caption"); ?></h3>
+            </header>
+            <div>
+              <div style="width:50%; margin:0 auto"><?php output_author_profile("Image"); ?></div>
+              <?php output_author_profile("Blurb"); ?>
+            </div>
+          </aside>
+          <a class="btn btn-success btn-block" href="<?php output_archive_link(); ?>" title="Blog archive">Blog archive</a>
+          <a class="btn btn-success btn-block" href="<?php output_contact_link(); ?>" title="Contact the blog">Contact the blog</a>
+        </div>
+        <section class="col-12 order-first col-md-8">
 <?php output_canonical_page();?>
         </section>
+
       </div>
     </div>
     <footer class="container-fluid">
       <hr />
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-center">
           <p>Content on <?php echo URL; ?>, Copyright &copy; <?php echo TITLE; ?> <?php echo date('Y'); ?></p>
-          <p><?php echo TITLE; ?>: Proudly powered by <a href="https://blogdraw.com">BlogDraw</a>.  Template: <?php echo TEMPLATE; ?> by <?php echo TEMPLATEBY; ?></p>
+          <p><?php echo TITLE; ?> is proudly powered by <a href="https://blogdraw.com">BlogDraw</a>.  Template: <?php echo output_template_name(); ?> by <a href="<?php echo output_template_contact_url(); ?>" title="<?php echo output_template_author(); ?>"><?php echo output_template_author(); ?></a></p>
         </div>
       </div>
     </footer>

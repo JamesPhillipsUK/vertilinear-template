@@ -1,5 +1,5 @@
 <!--
-  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020 - james@jamesphillipsuk.com.
+  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020.
  -->
 <!DOCTYPE html>
 <html lang="en">

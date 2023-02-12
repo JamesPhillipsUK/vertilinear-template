@@ -1,5 +1,5 @@
 /**
- * Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020.
+ * Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020, 2023.
  **/
 article div img, article div video {display: block; width: 75%; margin: 0 auto;}
 [class*="primary"]{background-color:#1B9AAA !important;color:#F9F9F9 !important;}

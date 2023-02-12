@@ -1,5 +1,5 @@
 <!--
-  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020.
+  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020, 2023.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -19,18 +19,18 @@
     <meta name="description" content="<?php output_head_description(); ?>" />
     <title><?php output_head_title(); ?></title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="<?php output_head_template_location(); ?>/bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php output_head_template_location(); ?>/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php output_head_template_location(); ?>/style.css" />
   </head>
   <body>
   <nav class="navbar navbar-dark bg-dark">
-      <div class="container d-flex justify-content-between">
-          <a href="<?php output_home_link(); ?>" title="<?php echo TITLE; ?>" class="navbar-brand d-flex align-items-center">
+      <div class="container-fluid d-flex justify-content-between mx-3 my-3">
+          <a href="<?php output_home_link(); ?>" title="<?php echo TITLE; ?>" class="navbar-brand d-flex align-items-center ml-3">
             <h1><?php output_site_title(false); ?></h1>
           </a>
         </div>
     </nav>
-    <div class="container-fluid py-3">
+    <div class="container py-3">
       <div class="row justify-content-center">
         <div class="col-12 col-md-3 order-md-first text-center">
           <aside>
@@ -38,12 +38,14 @@
               <h2><?php output_author_profile("Caption"); ?></h3>
             </header>
             <div>
-              <div style="width:50%; margin:0 auto"><?php output_author_profile("Image"); ?></div>
+              <div style="width:50%;" class="mx-auto"><?php output_author_profile("Image"); ?></div>
               <?php output_author_profile("Blurb"); ?>
             </div>
           </aside>
-          <a class="btn btn-success btn-block" href="<?php output_archive_link(); ?>" title="Blog archive">Blog archive</a>
-          <a class="btn btn-success btn-block" href="<?php output_contact_link(); ?>" title="Contact the blog">Contact the blog</a>
+          <div class="d-grid gap-2 mx-auto">
+            <a class="btn btn-success btn-block" href="<?php output_archive_link(); ?>" title="Blog archive">Blog archive</a>
+            <a class="btn btn-success btn-block" href="<?php output_contact_link(); ?>" title="Contact the blog">Contact the blog</a>
+          </div>
         </div>
         <section class="col-12 order-first col-md-8">
 <?php output_canonical_page();?>
@@ -60,8 +62,8 @@
         </div>
       </div>
     </footer>
-    <script src="<?php output_template_location(); ?>/bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
-    <script src="<?php output_template_location(); ?>/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="<?php output_template_location(); ?>/jquery-3.6.3.min.js"></script>
+    <script src="<?php output_template_location(); ?>/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <?php require_once ('./plugins/cookies/index.php'); ?>
   </body>
 </html>

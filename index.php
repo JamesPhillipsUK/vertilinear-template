@@ -1,5 +1,5 @@
 <!--
-  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020, 2023.
+  Vertilinear Template for BlogDraw.  Copyright © Jesse Phillips 2020, 2023, 2024.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@
     <meta name="description" content="<?php output_head_description(); ?>" />
     <title><?php output_head_title(); ?></title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="<?php output_head_template_location(); ?>/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php output_head_template_location(); ?>/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php output_head_template_location(); ?>/style.css" />
   </head>
   <body>
@@ -63,7 +63,7 @@
       </div>
     </footer>
     <script src="<?php output_template_location(); ?>/jquery-3.7.1.min.js"></script>
-    <script src="<?php output_template_location(); ?>/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php output_template_location(); ?>/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <?php require_once ('./plugins/cookies/index.php'); ?>
   </body>
 </html>

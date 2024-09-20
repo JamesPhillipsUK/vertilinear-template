@@ -62,7 +62,7 @@
         </div>
       </div>
     </footer>
-    <script src="<?php output_template_location(); ?>/jquery-3.6.3.min.js"></script>
+    <script src="<?php output_template_location(); ?>/jquery-3.7.1.min.js"></script>
     <script src="<?php output_template_location(); ?>/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <?php require_once ('./plugins/cookies/index.php'); ?>
   </body>

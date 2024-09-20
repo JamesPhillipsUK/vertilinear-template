@@ -22,13 +22,20 @@
     <link rel="stylesheet" href="<?php output_head_template_location(); ?>/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php output_head_template_location(); ?>/style.css" />
   </head>
+  <?php if (output_template_is_dark_mode()){ ?>
+  <body data-bs-theme="dark">
+    <nav class="container-fluid bg-primary p-3">
+  <?php } else { ?>
   <body>
-  <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid d-flex justify-content-between mx-3 my-3">
-          <a href="<?php output_home_link(); ?>" title="<?php echo TITLE; ?>" class="navbar-brand d-flex align-items-center ml-3">
+    <nav class="container-fluid bg-dark p-3">
+  <?php }?>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="<?php output_home_link(); ?>" title="<?php echo TITLE; ?>" class="text-white text-decoration-none">
             <h1><?php output_site_title(false); ?></h1>
           </a>
         </div>
+      </div>
     </nav>
     <div class="container py-3">
       <div class="row justify-content-center">

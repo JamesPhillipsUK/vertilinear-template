@@ -32,7 +32,7 @@
       <div class="row">
         <div class="col-12 text-center">
           <a href="<?php output_home_link(); ?>" title="<?php echo TITLE; ?>" class="text-white text-decoration-none">
-            <h1><?php output_site_title(false); ?></h1>
+            <?php output_site_title(false); ?>
           </a>
         </div>
       </div>
